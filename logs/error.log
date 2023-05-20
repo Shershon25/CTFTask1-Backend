@@ -1,0 +1,215 @@
+2023-05-20 11:23:50 [auth\signup.js] error: UserDetails.findOne is not a function
+
+2023-05-20 11:26:46 [backend\app.js] error: logger.infor is not a function
+
+2023-05-20 11:26:57 [auth\signup.js] error: Cannot read properties of undefined (reading 'findOne')
+
+2023-05-20 11:31:51 [auth\signup.js] error: Cannot read properties of undefined (reading 'findOne')
+
+2023-05-20 11:34:01 [auth\signup.js] error: UserDetails is not defined
+
+2023-05-20 11:34:25 [auth\signup.js] error: UserDetails is not defined
+
+2023-05-20 11:38:16 [auth\signup.js] error: notNull Violation: userdetails.name cannot be null
+{"name":"SequelizeValidationError","errors":[{"message":"userdetails.name cannot be null","type":"notNull Violation","path":"name","value":null,"origin":"CORE","instance":{"id":null,"registerno":"2020115081","email":"shershonjaps@gmail.com","password":"$2b$10$oCgHBgcF69zx69weyPkDmuiGbO2ag.KvUnWu7qFP5g1yFHEY/grBa","isEmailVerified":false,"isTwoFA":false,"updatedAt":"2023-05-20T06:08:16.857Z","createdAt":"2023-05-20T06:08:16.857Z"},"validatorKey":"is_null","validatorName":null,"validatorArgs":[]}]}
+
+2023-05-20 11:38:36 [auth\signup.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 11:39:10 [auth\signup.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 11:39:24 [auth\signup.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 11:44:29 [auth\signup.js] error: User Already exists!
+
+2023-05-20 11:45:59 [auth\signup.js] error: User Already exists!
+
+2023-05-20 12:05:36 [auth\signup.js] error: User Already exists!
+
+2023-05-20 12:32:49 [auth\signup.js] error: crypto is not defined
+
+2023-05-20 12:32:49 [auth\signup.js] error: Email not sent
+
+2023-05-20 12:33:21 [auth\signup.js] error: User Already exists!
+
+2023-05-20 12:33:44 [auth\signup.js] error: sendMail is not a function
+
+2023-05-20 12:33:44 [auth\signup.js] error: Email not sent
+
+2023-05-20 12:34:58 [auth\signup.js] error: sendMail is not a function
+
+2023-05-20 12:34:58 [auth\signup.js] error: Email not sent
+
+2023-05-20 12:35:02 [auth\signup.js] error: User Already exists!
+
+2023-05-20 12:35:30 [auth\signup.js] error: sendMail is not a function
+
+2023-05-20 12:35:30 [auth\signup.js] error: Email not sent
+
+2023-05-20 12:40:16 [auth\signup.js] error: User Already exists!
+
+2023-05-20 12:41:30 [auth\signup.js] error: sendmail is not a function
+
+2023-05-20 12:41:30 [auth\signup.js] error: Email not sent
+
+2023-05-20 12:42:27 [utils\mail.js] error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials v9-20020a17090a00c900b00253305f36c4sm2672804pjd.18 - gsmtp
+{"code":"EAUTH","response":"535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials v9-20020a17090a00c900b00253305f36c4sm2672804pjd.18 - gsmtp","responseCode":535,"command":"AUTH PLAIN"}
+
+2023-05-20 12:46:42 [utils\mail.js] error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials l6-20020a170902f68600b001ab2b415bdbsm801816plg.45 - gsmtp
+{"code":"EAUTH","response":"535-5.7.8 Username and Password not accepted. Learn more at\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials l6-20020a170902f68600b001ab2b415bdbsm801816plg.45 - gsmtp","responseCode":535,"command":"AUTH PLAIN"}
+
+2023-05-20 13:47:29 [utils\mail.js] error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor ik24-20020a170902ab1800b001a525705aa8sm934506plb.136 - gsmtp
+{"code":"EAUTH","response":"534-5.7.9 Application-specific password required. Learn more at\n534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor ik24-20020a170902ab1800b001a525705aa8sm934506plb.136 - gsmtp","responseCode":534,"command":"AUTH PLAIN"}
+
+2023-05-20 13:54:49 [utils\mail.js] error: Invalid login: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor s7-20020a170902988700b001a2b79db755sm927994plp.140 - gsmtp
+{"code":"EAUTH","response":"534-5.7.9 Application-specific password required. Learn more at\n534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor s7-20020a170902988700b001a2b79db755sm927994plp.140 - gsmtp","responseCode":534,"command":"AUTH PLAIN"}
+
+2023-05-20 13:57:25 [utils\mail.js] error: No recipients defined
+{"code":"EENVELOPE","command":"API"}
+
+2023-05-20 13:59:11 [utils\mail.js] error: No recipients defined
+{"code":"EENVELOPE","command":"API"}
+
+2023-05-20 15:37:39 [auth\login.js] error: Token Already exists!
+
+2023-05-20 15:39:35 [auth\login.js] error: Token Already exists!
+
+2023-05-20 15:41:04 [auth\login.js] error: Token Already exists!
+
+2023-05-20 15:41:12 [auth\login.js] error: Token Already exists!
+
+2023-05-20 15:41:34 [auth\login.js] error: Token Already exists!
+
+2023-05-20 17:53:21 [auth\login.js] error: Token Already exists!
+
+2023-05-20 18:00:10 [auth\login.js] error: Token Already exists!
+
+2023-05-20 18:03:32 [auth\login.js] error: Token Already exists!
+
+2023-05-20 18:31:15 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:31:16 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:31:16 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:32:28 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:32:28 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:32:55 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:32:56 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:34:00 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:34:00 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:34:30 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:34:30 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:34:47 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:34:51 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:35:57 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:37:59 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:38:58 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:41:37 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:42:08 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:51:57 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:51:57 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:52:01 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:52:02 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:52:21 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:55:47 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:55:52 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:55:53 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 18:59:43 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 19:00:00 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 19:00:17 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 19:00:31 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 19:01:33 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 19:02:52 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 19:03:41 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 19:05:41 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 19:06:04 [user\user.js] error: Cannot set headers after they are sent to the client
+{"code":"ERR_HTTP_HEADERS_SENT"}
+
+2023-05-20 21:27:50 [auth\password.js] error: lcode is not defined
+
+2023-05-20 21:28:51 [auth\password.js] error: Id not found - Error
+
+2023-05-20 21:29:08 [auth\password.js] error: Id not found - Error
+
+2023-05-20 21:30:16 [auth\password.js] error: Id not found - Error
+
+2023-05-20 21:31:24 [auth\password.js] error: Id not found - Error
+
+2023-05-20 21:32:40 [auth\password.js] error: Id not found - Error
+
+2023-05-20 21:33:41 [auth\password.js] error: Id not found - Error
+
+2023-05-20 21:34:24 [auth\password.js] error: Id not found - Error
+
