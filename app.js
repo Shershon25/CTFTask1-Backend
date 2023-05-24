@@ -35,6 +35,10 @@ UserDetails.sequelize.sync()
   logger.error(err)
 })
 
+app.get("/",(req,res)=>{
+  res.send({message: "This is working!"})
+})
+
 //allow login-signup routes without jwt Authorization
 app.use('/api/auth', authroutes); 
 
