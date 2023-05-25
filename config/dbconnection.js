@@ -5,18 +5,11 @@ const { Sequelize } = require("sequelize");
 //     dialect: 'postgres'
 //   });
 
-const db = new Sequelize('ctftest1', 'postgres', 'thisisnotgoodlol', {
-    host: 'database-2.cvyau4xzirke.ap-south-1.rds.amazonaws.com',
-    port: 5432,
-    logging: console.log,
-    maxConcurrentQueries: 100,
-    dialect: 'postgres',
-    dialectOptions: {
-        ssl:'Amazon RDS'
-    },
-    pool: { maxConnections: 5, maxIdleTime: 30},
-    language: 'en'
-})
+const db = new Sequelize('postgres//postgres:thisisnotgoodlol@database-2.cvyau4xzirke.ap-south-1.rds.amazonaws.com/ctftest1', {
+        host: 'database-2.cvyau4xzirke.ap-south-1.rds.amazonaws.com',
+        dialect: 'postgres'
+      });
+    
 
 db.authenticate()
 .then(()=>{ 
