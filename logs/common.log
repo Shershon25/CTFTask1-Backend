@@ -5561,3 +5561,29 @@
 
 2023-05-25 15:50:55 [backend\app.js] info: Synced db.
 
+2023-05-25 15:50:56 [backend\app.js] info: App Started!! at PORT
+
+2023-05-25 15:50:56 [backend\app.js] info: Model worked!!
+
+2023-05-25 15:50:57 [backend\app.js] info: Synced db.
+
+2023-05-25 16:17:58 [auth\signup.js] error: User Already exists!
+
+2023-05-25 16:24:02 [backend\app.js] info: App Started!! at PORT
+
+2023-05-25 16:24:02 [backend\app.js] info: Model worked!!
+
+2023-05-25 16:24:03 [backend\app.js] info: Synced db.
+
+2023-05-25 16:24:13 [backend\app.js] info: App Started!! at PORT
+
+2023-05-25 16:24:17 [backend\app.js] info: App Started!! at PORT
+
+2023-05-25 16:24:18 [backend\app.js] info: App Started!! at PORT
+
+2023-05-25 16:24:21 [backend\app.js] info: App Started!! at PORT
+
+2023-05-25 16:24:21 [backend\app.js] info: Model worked!!
+
+2023-05-25 16:24:22 [backend\app.js] info: App Started!! at PORT
+
