@@ -12,9 +12,9 @@ const userroutes=require('./routes/user')
 const { verifyUser, JWTVerify } = require('./controllers/auth')
 const  utils=require('./utils');
 
-app.enable('trust proxy')
-
 app.use(cors());//update it when u integrate with frontend
+
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
@@ -48,9 +48,7 @@ UserDetails.sequelize.sync()
 //   next();
 // })
 
-app.get("/",(req,res)=>{
-  res.send({message: "This is working!"})
-})
+
 
 //allow login-signup routes without jwt Authorization
 app.use('/api/auth', authroutes); 
@@ -58,6 +56,10 @@ app.use('/api/auth', authroutes);
 app.use('/user/verify/:id/:token',verifyUser)
 
 app.use('/api/user',JWTVerify, userroutes )
+
+app.get("/",(req,res)=>{
+  res.send({message: "This is working!"})
+})
 
 // // Authorizing requests
 // app.use((req,res,next)=>{
