@@ -1,5 +1,7 @@
 var logger=require("./utils/log")(module)
 const dotenv = require('dotenv').config()
+const https = require("https");
+const fs = require("fs");
 const express = require('express');
 const app = express();
 const cors=require('cors');
@@ -9,6 +11,8 @@ const authroutes=require('./routes/auth')
 const userroutes=require('./routes/user')
 const { verifyUser, JWTVerify } = require('./controllers/auth')
 const  utils=require('./utils');
+
+app.enable('trust proxy')
 
 app.use(cors());//update it when u integrate with frontend
 app.use(express.json());
@@ -33,6 +37,15 @@ UserDetails.sequelize.sync()
 })
 .catch((err)=>{
   logger.error(err)
+})
+
+app.use(function(request, response, next) {
+
+  if (process.env.NODE_ENV != 'development' && !request.secure) {
+     return response.redirect("https://" + request.headers.host + request.url);
+  }
+
+  next();
 })
 
 app.get("/",(req,res)=>{
@@ -83,7 +96,20 @@ app.use('/api/user',JWTVerify, userroutes )
 //   return res.status(404)
 // });
 
-app.listen(process.env.PORT || 5000, (err) => {
-  if (!err) logger.info("App Started!! at PORT",process.env.PORT)
-  else logger.error("Error Starting") 
-})
+// app.listen(process.env.PORT || 5000, (err) => {
+//   if (!err) logger.info("App Started!! at PORT",process.env.PORT)
+//   else logger.error("Error Starting") 
+// })
+
+https
+  .createServer(
+    {
+      key: fs.readFileSync('./certificates/key.pem'),
+      cert: fs.readFileSync("./certificates/cert.pem"),
+    },
+    app
+    )
+  .listen(process.env.PORT || 5000, (err)=>{
+    if (!err) logger.info("App Started!! at PORT",process.env.PORT)
+    else logger.error("Error Starting") 
+});
